@@ -1,0 +1,43 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/utils/geomanist.scss';
+
+.sobre-nosotros-page {
+    font-family: 'geomanistregular';
+    padding: 0 10 15 10;
+    text-align: justify;
+}
+
+.sobre-nosotros-page__map-container {
+  border: 0;
+  width: 350px;
+  height: 500px;
+}
+
+.google-maps-iframe {
+  width: 600px;
+  height: 300px;
+  @include breakpoint(handhelds) {
+      width: 95%;
+      height: 300px;
+  }
+}
+
+.sobre-nosotros-page__title {
+    margin-top: 20px;
+    align-self: center;
+    width: 100%;
+}
+
+.sobre-nosotros-page__content {
+  margin-top: 30px;
+  @include breakpoint(handhelds) {
+      margin-top: 0;
+  }
+}
+
+.sobre-nosotros-page__block {
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}

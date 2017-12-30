@@ -1,0 +1,50 @@
+@import '../../../styles/mixins/breakpoints';
+@import '../../../styles/variables.scss';
+@import '../../../styles/utils/geomanist.scss';
+
+.stores-page {
+  padding: 0 10 15 10;
+  text-align: justify;
+  font-family: 'geomanistregular';
+}
+
+.stores-page__content {
+
+}
+
+.stores-page__content p,a { color: black;}
+
+.stores-page__block {
+
+    @include breakpoint(wide-screens) {
+        width: 50%;
+    }
+
+    &:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    &:not(:first-child) {
+        padding-top: 30px;
+        border-top: 1px solid #eee;
+    }
+
+    a {
+        color: $color-primary;
+    }
+}
+
+.stores-page__schedule,
+.stores-page__address,
+.stores-page__contacts{
+    font-size: $font-size-small;
+    color: $color-body;
+}
+
+.stores-page__schedule {
+    margin-top: 5px;
+}
+
+.stores-page__contacts {
+    margin-top: 5px;
+}

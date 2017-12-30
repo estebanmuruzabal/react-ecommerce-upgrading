@@ -1,0 +1,51 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.checkout-shipping-information__select-method {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.checkout-shipping-information__content {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.checkout-summary__warning {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: $color-secondary;
+    border-radius: $border-radius-default;
+}
+
+.checkout-shipping-information__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-shipping-zones {
+    width: 183px;
+    height: 155px;
+    cursor: pointer;
+    background: url('./shipping-zones-image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 15 0 0 15;
+    &:hover {
+      border: 1px solid green;
+      border-radius: 3px;
+    }
+}
+
+.checkout-shipping-information__column {
+    display: flex;
+    flex-direction: row;
+    @include breakpoint(handhelds) {
+      flex-direction: column;
+    }
+}

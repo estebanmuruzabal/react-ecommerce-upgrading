@@ -1,0 +1,28 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/utils/geomanist.scss';
+
+.idioma-aleman-page {
+    padding: 0 10 15 10;
+    font-family: 'geomanistregular';
+    text-align: justify;
+}
+
+.idioma-aleman-page__block {
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.idioma-aleman-page__title {
+    margin-top: 20px;
+    align-self: center;
+    width: 100%;
+}
+
+.idioma-aleman-page__content {
+  margin-top: 30px;
+  @include breakpoint(handhelds) {
+      margin-top: 0;
+  }
+}

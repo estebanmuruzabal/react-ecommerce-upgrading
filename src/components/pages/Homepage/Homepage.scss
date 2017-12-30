@@ -1,0 +1,153 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/utils/geomanist.scss';
+/*
+ * Featured Collections
+ */
+
+.homepage__cta {
+    display: flex;
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+.fb-frame {
+  width: 100%;
+  height: 690px;
+  border: none;
+  overflow:hidden;
+  @include breakpoint(handhelds) {
+      width: 96%;
+      padding: 0 2% 0 4%;
+  }
+}
+
+.homepage__text-content {
+    font-family: 'geomanistregular';
+    display: flex;
+    flex-direction: row;
+    text-align : justify;
+    @include breakpoint(handhelds) {
+      margin-top: 5px;
+      flex-direction: column;
+    }
+}
+
+.homepage__container-right-column {
+  margin: 2px;
+  width: 50%;
+  @include breakpoint(handhelds) {
+      width: 100%;
+  }
+}
+
+.actividades-div {
+  border-top: 1px solid #21174e;
+  margin: 6 30 12 6;
+}
+
+.homepage__title {
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    @include breakpoint(handhelds) {
+        text-align: center;
+    }
+}
+
+.homepage__container-left-column {
+  width: 50%;
+  margin: 0 20 0 5;
+  @include breakpoint(handhelds) {
+      width: 90%;
+      margin: 1% 5% 0 5%;
+  }
+}
+
+.goethe-approve-image {
+  background: url('./goethe-approve-image.jpg');
+  background-size: 100%;
+  height: 120px;
+  width: 160px;
+  background-repeat: no-repeat;
+
+  @include breakpoint(handhelds) {
+      margin-top: 0;
+  }
+}
+
+.homepage__featured {
+    flex-wrap: wrap;
+    align-self: center;
+    width: 20%;
+    min-width: 250px;
+    @include breakpoint(handhelds) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        order: 2;
+    }
+}
+
+.homepage__featured-block {
+    display: flex;
+    margin-top: 20px;
+}
+
+.homepage__banners {
+  align-self: center;
+  width: 100%;
+  @include breakpoint(handhelds) {
+      order: 1;
+      padding: 0 5px 0 5px;
+  }
+}
+
+/*
+ * Articles
+ */
+
+.homepage__articles {
+    display: flex;
+    margin-top: 30px;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    @include breakpoint(medium-screens) {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+
+.homepage__article-item {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #E7E7E7;
+    box-shadow: rgba(0,0,0,.1) 0 2px 5px;
+
+    @include breakpoint(handhelds) {
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    @include breakpoint(medium-screens) {
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    @include breakpoint(wide-screens) {
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+}
+
+.homepage__article-link {
+    text-decoration: none;
+}

@@ -1,0 +1,46 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles//utils/geomanist.scss';
+
+.info-page {
+    padding: 0 10 15 10;
+    text-align: justify;
+    font-family: 'geomanistregular';
+}
+
+.info-page__content {
+    margin-top: 30px;
+}
+
+.info-page__block {
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.info-page__support,
+.info-page__shipping,
+.info-page__terms-and-conditions {
+
+    a {
+        color: $color-primary;
+    }
+
+    p {
+        margin-top: 15px;
+    }
+
+    p, ul {
+        font-size: $font-size-small;
+        color: $color-body;
+    }
+}
+
+.info-page__shipping {
+
+    ul {
+        list-style: initial;
+        margin: 10px;
+        padding: 10px;
+    }
+}

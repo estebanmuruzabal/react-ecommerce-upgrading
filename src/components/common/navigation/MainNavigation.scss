@@ -1,0 +1,146 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/utils/geomanist.scss';
+
+.main-navigation {
+  margin: 0;
+  width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+    font-family: 'geomanistregular',sans-serif!important;
+    font-size: 18px!important;
+    -webkit-font-smoothing: antialiased!important;
+    letter-spacing: .05em!important;
+    & > a {
+      color: black;
+      z-index: 3000;
+      bottom: -1px;
+      margin-top: -1px;
+      display: inline-block;
+      width: 100%;
+      padding: 1em 0;
+      line-height: 1.25em;
+      -webkit-transition-duration: .3s;
+      transition-duration: .3s;
+      -ms-transition-duration: 0s;
+      border-bottom: 1px solid transparent;
+
+        text-decoration: none;
+        &:hover {
+            color: #d4d4d4;
+        }
+    }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 998;
+    padding: 5px;
+    border-right: 1px solid #f1f2f2;
+    border-bottom: 1px solid #f1f2f2;
+    border-left: 1px solid #f1f2f2;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.dropdown-link-title {
+  font-size: 15px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 7px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .main-navigation__item-regular {
+    background-color: #3e8e41;
+}
+
+.main-navigation__item {
+    display: inline;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+
+    & > a {
+        color: yellow;
+        text-decoration: none;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.main-navigation-nav-ul {
+  display: flex;
+}
+
+.main-navigation__item-regular {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+
+  font-family: 'geomanistregular',sans-serif!important;
+  font-size: 18px!important;
+  -webkit-font-smoothing: antialiased!important;
+  letter-spacing: .05em!important;
+  &:hover {
+      background-color: #fff;
+      cursor: pointer;
+  }
+  & > a {
+    color: black;
+    z-index: 3000;
+    bottom: -1px;
+    margin-top: -1px;
+    display: inline-block;
+    width: 100%;
+    padding: 1em 0;
+    line-height: 1.25em;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -ms-transition-duration: 0s;
+    border-bottom: 1px solid transparent;
+
+      text-decoration: none;
+      &:hover {
+          color: #d4d4d4;
+      }
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles//utils/geomanist.scss';
+
+.intercambios-page {
+  padding: 0 10 15 10;
+  font-family: 'geomanistregular';
+  text-align: justify;
+}
+
+.intercambios-page__title {
+    margin-top: 20px;
+    align-self: center;
+    width: 100%;
+}
+
+.intercambios-page__main-content {
+    margin-top: 30px;
+}
+
+.intercambios-page__block {
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.intercambios-page__content {
+  margin-top: 30px;
+  @include breakpoint(handhelds) {
+      margin-top: 0;
+  }
+}

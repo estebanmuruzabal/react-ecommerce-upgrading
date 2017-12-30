@@ -1,0 +1,76 @@
+@import '../../../../styles/variables.scss';
+
+.desktop-header {
+    display: flex;
+    justify-content: center;
+    background-color: #eaebe8;
+    border-top: 1px solid #21174e;
+}
+
+/*
+ * Container
+ */
+
+.desktop-header__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: $layout-max-width;
+    @media only screen and (min-width: $layout-max-width) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.desktop-header__row {
+    display: flex;
+    width: 100%;
+
+    &:not(:first-child) {
+        margin-top: 7.5px;
+    }
+}
+
+.desktop-header__container-left-column {
+    width: 100%;
+}
+
+.desktop-header__container-right-column {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 350px;
+    align-self: center;
+}
+
+.desktop-header__navigation {
+    display: flex;
+}
+
+/*
+ * Account & Cart
+ */
+
+.desktop-header__account {
+    display: flex;
+    align-self: center;
+}
+
+.desktop-header__admin-button,
+.desktop-header__logout-button,
+.desktop-header__account-button,
+.desktop-header__register-button {
+    align-self: center;
+    padding: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+        &:hover {
+            span {
+                color: #d4d4d4;
+            }
+        }
+    }
+}

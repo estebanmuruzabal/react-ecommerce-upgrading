@@ -1,0 +1,26 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/utils/geomanist.scss';
+
+.mas-page {
+  padding: 0 10 15 10;
+  font-family: 'geomanistregular';
+  text-align: justify;
+}
+
+.mas-page__content {
+    margin-top: 30px;
+}
+
+.mas-page__content {
+  margin-top: 30px;
+  @include breakpoint(handhelds) {
+      margin-top: 0;
+  }
+}
+
+.mas-page__block {
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}

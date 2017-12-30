@@ -1,0 +1,54 @@
+@import '../../../styles/variables.scss';
+
+.heading {
+    color: $color-heading;
+
+    // Size
+
+    &-large {
+        font-size: $font-size-heading-large;
+    }
+
+    &-medium {
+        font-size: $font-size-heading-medium;
+    }
+
+    &-small {
+        font-size: $font-size-heading-small;
+    }
+
+    // color
+
+    &-white {
+        color: white;
+    }
+
+    &-black {
+        color: black;
+    }
+
+    &-red {
+        color: red;
+    }
+
+    &-gray {
+        color: gray;
+    }
+    &-yellow {
+        color: yellow;
+    }
+
+    // Alignment
+
+    &--align-left {
+        text-align: left;
+    }
+
+    &--align-center {
+        text-align: center;
+    }
+
+    &--align-right {
+        text-align: right;
+    }
+}

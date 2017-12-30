@@ -1,0 +1,126 @@
+@import '../../../styles/variables.scss';
+.address-field__item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.address-field__address-line2 {
+    margin-top: 10px;
+}
+
+.address-field__saved-addresses {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.address-field__input {
+    width: 100%;
+    max-width: 100%;
+    min-height: 32px;
+    padding: 15px 0px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    text-indent: 10px;
+    font: $font-size-small $font-family-body;
+    color: $color-body;
+    transition: border-color 0.2s linear, box-shadow 0.2s ease;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 3px rgba(0,0,0,.2);
+        min-height: 32px;
+    }
+
+    &--error {
+        border-color: $color-error;
+    }
+}
+
+.address-field__error {
+    margin: 0 0 0 10;
+    color: $color-error;
+
+    & > span {
+        color: $color-error;
+    }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+}
+
+.button-shipping {
+    display: inline-block;
+    width: 40%;
+    height: 40px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+
+    cursor: pointer;
+
+    transition-delay: 0s, 0s;
+    transition-duration: 0.5s, 0.5s;
+    transition-property: background, color;
+    transition-timing-function: ease, ease;
+
+    border-style: none;
+    border-radius: 3px 3px 3px 3px;
+
+    font-family: $font-family-heading;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-transform: uppercase;
+
+    &-font-small {
+        font-size: 10px;
+    }
+
+    &-font-medium {
+        font-size: 14px;
+    }
+
+    &-font-large {
+        font-size: 18px;
+    }
+
+    &-default {
+        background-color: rgb(192, 192, 192);
+        color: rgb(255, 255, 255);
+        &:hover:not(.button--disabled) {
+            color: #ffffff;
+            background: #A5A5A5;
+        }
+    }
+
+    &-primary {
+        background-color: $color-primary;
+        color: rgb(255, 255, 255);
+        &:hover:not(.button--disabled) {
+            color: #ffffff;
+            background: $color-primary-hover;
+        }
+    }
+
+    &--disabled {
+        opacity: 0.3;
+    }
+}

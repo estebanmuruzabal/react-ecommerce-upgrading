@@ -1,0 +1,70 @@
+@import '../../../styles/variables.scss';
+
+.radio-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-select__input-option {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+.input-field__input {
+    width: 100%;
+    max-width: 100%;
+    min-height: 32px;
+    padding: 15px 0px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    text-indent: 10px;
+    font: $font-size-small $font-family-body;
+    color: $color-body;
+    transition: border-color 0.2s linear, box-shadow 0.2s ease;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 3px rgba(0,0,0,.2);
+        min-height: 32px;
+    }
+
+    &--error {
+        border-color: $color-error;
+    }
+}
+
+/*
+ * Radio item option
+ */
+
+.radio-select__item {
+    display: flex;
+}
+
+.radio-select__input {
+    align-self: center;
+}
+
+.radio-select__label {
+    align-self: center;
+    margin-left: 5px;
+}
+
+.radio-select__option-detail {
+    margin-left: 7.5px;
+}
+
+/*
+ * Optional children
+ */
+
+.radio-select__children {
+    margin-top: 15px;
+}

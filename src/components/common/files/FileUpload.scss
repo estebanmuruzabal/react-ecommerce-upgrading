@@ -1,0 +1,22 @@
+.file-upload {
+    width: 140px;
+}
+
+.file-upload__input {
+
+}
+
+.file-upload__placeholder {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    cursor: pointer;
+
+    & > img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+.file-upload__actions {
+    margin-top: 5px;
+}
